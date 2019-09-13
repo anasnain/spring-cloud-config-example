@@ -21,3 +21,35 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# exclude generic files/folders
+.DS_Store
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+.mule
+$*
+
+# exclude target folder
+/target/*
+
+# Eclipse Core
+.project
+
+*global-application-*.properties*
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Anypoint Studio folder
+/.studio/*
+
+
+velocity.log
+*/target/*
+.idea/
+*.iml
+
