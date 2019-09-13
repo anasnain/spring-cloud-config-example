@@ -33,8 +33,9 @@ For example, we have created a client module whose appliaction name (check sprin
 
 # Access client module application
 We have create 2 endpoints to test if we are able to fetch property value from config server
-http://localhost:9081/userType
-http://localhost:9081/errorType
+1. http://localhost:9081/userType
+
+2. http://localhost:9081/errorType
 
 # Update property value in git and commit the change and see if the property got updated without restarting client/server app
 - Commit the changes in configuration repo
