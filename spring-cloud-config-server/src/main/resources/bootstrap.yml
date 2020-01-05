@@ -9,7 +9,6 @@ spring:
        server:
            git:
              uri: https://github.com/anasnain/spring-cloud-config-example.git
-#            uri: /Users/aansari3/Documents/CodeSpace/demo-cloud-config/config-server-repo
              searchPaths: config-repo
 #spring.cloud.config.server.git.searchPaths :- If the property files are stored under the sub directory of the repository, the directory name should be specified here.
 
