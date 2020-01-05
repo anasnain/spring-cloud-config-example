@@ -15,13 +15,21 @@ public class DemoAppController {
     @Value("${keyB}")
     private String keyB;
 
+    @Value("${keyC}")
+    private String keyC;
+
     @GetMapping("/keyA")
-    String getUserType() {
+    String getKeyA() {
         return this.keyA;
     }
 
     @GetMapping("/keyB")
-    String getErrorType() {
+    String getKeyB() {
         return this.keyB;
+    }
+
+    @GetMapping("/keyC")
+    String getKeyC() {
+        return this.keyC;
     }
 }
