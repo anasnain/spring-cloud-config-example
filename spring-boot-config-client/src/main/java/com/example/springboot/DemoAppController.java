@@ -7,21 +7,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RefreshScope
 @RestController
-public class UserTypeController {
+public class DemoAppController {
 
-    @Value("${user.type}")
-    private String userType;
+    @Value("${keyA}")
+    private String keyA;
 
-    @Value("${error.type}")
-    private String errorType;
+    @Value("${keyB}")
+    private String keyB;
 
-    @GetMapping("/userType")
+    @GetMapping("/keyA")
     String getUserType() {
-        return this.userType;
+        return this.keyA;
     }
 
-    @GetMapping("/errorType")
+    @GetMapping("/keyB")
     String getErrorType() {
-        return this.errorType;
+        return this.keyB;
     }
 }
