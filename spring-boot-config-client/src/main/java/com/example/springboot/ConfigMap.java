@@ -1,9 +1,11 @@
 package com.example.springboot;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
+@Service
 @ConfigurationProperties(prefix="db")
 public class ConfigMap {
 

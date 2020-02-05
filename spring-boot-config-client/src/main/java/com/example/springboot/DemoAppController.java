@@ -43,10 +43,12 @@ public class DemoAppController {
     @Autowired
     ConfigMap configMap;
 
-    @GetMapping("/key/{key}")
-    String getKey(@PathParam("key") String key ) {
-        final Map<String, String> query = configMap.getQuery();
+    @GetMapping("/query")
+    String getKey(@RequestParam("key") String key ) {
+        Map<String, String> query = configMap.getQuery();
+        System.out.println("key = "+ key);
         System.out.println("queryMap = "+ query);
+        System.out.println("query.get(key) = "+ query.get(key));
         return query.get(key);
     }
 }
